@@ -117,20 +117,45 @@ h4 {
 }
 
 .about-left img {
-    width: 90%;
-    border-radius: 1rem;
+    width: 10%;
+    border-radius: 5rem;
 }
 
 .about-content p {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
 }
 
+/* certificate */
+.screenshot {
+    margin: 30px;
+    width: 300px;
+    border: 5px solid greenyellow;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+}
 
+/*.crtifiecate-left,
+.certificate-right {
+    width: 40%;
+}
+
+.certificate-right {
+    padding-right: 0%;
+}
+
+.certificate-left {
+    
+    position: relative;
+}
+
+.certificate-left img {
+    width: 10%;
+    border-radius: 5%;
+}
 /* Skills */
-#skills {
-    margin-top: 3rem;
+.skills {
+    margin-top: 30px;
 }
-
 .skills-left {
     width: 50%;
 }
