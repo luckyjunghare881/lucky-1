@@ -594,3 +594,14 @@ ul li a:hover {
     color: #1f1f38;
     background-color: #4db5ff;
 }
+
+
+
+/* Active navigation link styling */
+.active {
+    color: #4db5ff !important;
+    background: rgba(77, 181, 255, 0.1);
+    border-radius: 0.4rem;
+    padding: 0.5rem 0.9rem !important;
+    border: 1px solid rgba(77, 181, 255, 0.3);
+}

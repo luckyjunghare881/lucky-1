@@ -129,19 +129,3 @@
 .test-item img {
     width: 50%;
 }
-
-@media only screen and (max-width: 470px) {
-    #footer .res {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #footer .res li {
-        margin-bottom: 1rem;
-    }
-
-    #bottom .bottom-nav {
-        padding: 0;
-    }
-}
