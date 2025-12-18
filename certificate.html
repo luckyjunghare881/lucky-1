@@ -19,10 +19,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> lucky junghare certificate section</section></title>
+    <title>Lucky Junghare - Certificates</title>
+
     <style>
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #61dafb;
@@ -39,45 +40,62 @@
             max-width: 1000px;
             margin: 40px auto;
             padding: 40px;
-    background-color: #29385c;
+            background-color: #29385c;
             border-radius: 10px;
             box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
         }
 
         h2 {
             color: #f4efef;
+            text-align: center;
+            margin-bottom: 30px;
         }
 
+        /* ===== Certificate Grid (n × m matrix) ===== */
         .certificate {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            gap: 50px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
         }
 
-        .certificate-item {
-            width: calc(100.66% - 80px);
-            margin-bottom: 40px;
-        }
+       .certificate-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f2a44;
+    padding: 15px;
+    border-radius: 10px;
+}
 
-        .certificate-item img {
-            width: 50%;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(246, 244, 244, 0.1);
-        }
+.certificate-item img {
+    width: 100%;
+    height: 200px;            /* fixed height */
+    object-fit: contain;      /* IMPORTANT: no stretching */
+    background-color: #fff;   /* looks like real certificate */
+    border-radius: 8px;
+  /*  box-shadow: 0 0 15px rgba(246, 244, 244, 0.3);
+    transition: transform 0.3s ease; */
+}
 
-        @media (max-width: 1768px) {
-            .certificate-item {
-                width: 50%;
+.certificate-item img:hover {
+    transform: scale(1.05);
+}
+        
+
+        /* Mobile friendly */
+        @media (max-width: 600px) {
+            section {
+                padding: 20px;
             }
         }
     </style>
 </head>
+
 <body>
 
     <header>
-        <h1>lucky junghare</h1>
-        <p>achievement </p>
+        <h1>Lucky Junghare</h1>
+        <p>Achievements</p>
     </header>
 
     <section>
@@ -87,15 +105,138 @@
             <div class="certificate-item">
                 <img src="Screenshot (1).png" alt="Certificate 1">
             </div>
+
             <div class="certificate-item">
                 <img src="Screenshot (2).png" alt="Certificate 2">
             </div>
+
             <div class="certificate-item">
                 <img src="Screenshot (3).png" alt="Certificate 3">
             </div>
-            <!-- Add more certificate items as needed -->
-        </div>
-    </section>
+
+            <div class="certificate-item">
+                <img src="My Certificates/dbms_1.png" alt="Certificate 4">
+            </div> 
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot (4).png" alt="Certificate 5">
+            </div>  
+            
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot (5).png" alt="Certificate 6">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot (6).png" alt="Certificate 7">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot (7).png" alt="Certificate 8">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/data_visualisation.png" alt="Certificate 9">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/aws_certificat.png" alt="Certificate 10">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot (10).png" alt="Certificate 11">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot (48).png" alt="Certificate 12">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot (49).png" alt="Certificate 13">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot (50).png" alt="Certificate 14">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot (67).png" alt="Certificate 15">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-07-05 001026.png" alt="Certificate 16">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-07-09 183100.png" alt="Certificate 17">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-07-29 001333.png" alt="Certificate 18">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-07-29 001402.png" alt="Certificate 19">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-08-17 140926.png" alt="Certificate 20">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-08-17 141306.png" alt="Certificate 21">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-08-31 153746.png" alt="Certificate 22">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-08-31 153929.png" alt="Certificate 23">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-08-31 154006.png" alt="Certificate 24">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-09-07 133959.png" alt="Certificate 25">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-09-10 222442.png" alt="Certificate 26">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-11-05 180003.png" alt="Certificate 27">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-11-05 180003.png" alt="Certificate 28">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-11-11 163258.png" alt="Certificate 29">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-11-29 210713.png" alt="Certificate 30">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-12-04 224401.png" alt="Certificate 31">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-12-07 001921.png" alt="Certificate 32">
+            </div>
+
+            <div class="certificate-item">
+                <img src="My Certificates/Screenshot 2025-12-18 223240.png" alt="Certificate 33">
+            </div>
+
+            
 
 </body>
 </html>
+
+
