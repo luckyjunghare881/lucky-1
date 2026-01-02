@@ -229,11 +229,11 @@
         flex-wrap: wrap;
     }
     
-    /* Scroll to Top - adjust for bottom nav */
+    /* Scroll to Top - adjust for bottom nav *
     #scroll-top {
         bottom: 6rem;
         right: 1rem;
-    }
+    }  */
 }
 
 /* ===============================
