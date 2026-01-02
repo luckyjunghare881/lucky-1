@@ -4,297 +4,528 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> lucky junghare Frontend Web Developer </title>
-    <link rel="icon" type="image/x-icon" href="./Images/favicon.png">
+    <title>Lucky Junghare | Frontend Web Developer</title>
+    <meta name="description" content="Lucky Junghare - Frontend Web Developer portfolio showcasing web development projects, skills, and services.">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width: 821px)" href="responsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <!-- Navbar Section -->
-    <nav id="navbar" class="flex s-around bg-color">
-        <div class="left-nav">
-            <h2 class="t-white">LUCKY JUNGHARE </h2>
-        </div>
-        <div class="right-nav">
-            <ul class="flex">
-                <li><a href="home.html" class="t-white roboto">Home</a></li>
-                <li><a href="about.html" class="t-white roboto">About Me</a></li>
-                <li><a href="certificate.html"class="t-white roboto">certificate</a></li>
-                <li><a href="skills.html" class="t-white roboto">Skills</a></li>
-                <li><a href="services.html" class="t-white roboto">services</a></li>
-                <li><a href="projects.html" class="t-white roboto">Projects</a></li>
-            </ul>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>LUCKY JUNGHARE</h2>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About Me</a></li>
+                    <li><a href="certificate.html" class="nav-link">Certificates</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contacts" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
-    <!-- Bottom Navigator -->
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="#home" class="mobile-link">Home</a></li>
+            <li><a href="#about" class="mobile-link">About Me</a></li>
+            <li><a href="certificate.html" class="mobile-link">Certificates</a></li>
+            <li><a href="#skills" class="mobile-link">Skills</a></li>
+            <li><a href="#services" class="mobile-link">Services</a></li>
+            <li><a href="#projects" class="mobile-link">Projects</a></li>
+            <li><a href="#contact" class="mobile-link">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Bottom Navigator (Mobile) -->
     <section id="bottom">
-        <div class="bottom-nav flex s-center items-center">
-            <ul class="flex s-around items-center">
-                <a href="home.html">
-                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-house"></i></li>
+        <div class="bottom-nav">
+            <ul>
+                <a href="#home">
+                    <li class="bottom-item"><i class="fa-solid fa-house"></i></li>
                 </a>
-                <a href="about.html">
-                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-user"></i></li>
+                <a href="#about">
+                    <li class="bottom-item"><i class="fa-solid fa-user"></i></li>
                 </a>
                 <a href="certificate.html">
-                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-certificate"></i></li>
+                    <li class="bottom-item"><i class="fa-solid fa-certificate"></i></li>
                 </a>
-                <a href="skills.html">
-                    <li class="bottomo-hover flex s-center items-center"><i class="fa-solid fa-code"></i></li>
+                <a href="#skills">
+                    <li class="bottom-item"><i class="fa-solid fa-code"></i></li>
                 </a>
-                <a href="services.html">
-                    <li class="bottomo-hover flex s-center items-center">
-                        <i class="fa-solid fa-rocket"></i>
-                    </li>
+                <a href="#services">
+                    <li class="bottom-item"><i class="fa-solid fa-rocket"></i></li>
+                </a>
+                <a href="#projects">
+                    <li class="bottom-item"><i class="fa-solid fa-folder-open"></i></li>
                 </a>
             </ul>
         </div>
     </section>
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'c2fef511d153b3537007f1abcc5dfe9f',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="//www.topcreativeformat.com/c2fef511d153b3537007f1abcc5dfe9f/invoke.js"></script>
 
-    <!-- Home Section -->
-    <section id="home" class="flex s-around sw-80 m-auto">
-        <div class="home-left flex items-center">
-            <div class="home-content">
-                <h6 class="poppinss">Hi, I'm</h6>
-                <h1 class="t-white">lucky junghare</h1>
-                <h4 class="poppinss">Frontend Web Developer</h4>
-                <a href="Resume.pdf" target="_blank"><button
-                        class="btn poppins">Resume</button></a>
-                <a class="btn live poppins" id="hireme" href="https://www.linkedin.com/in/lucky-junghare-869982232"
-                    target="_blank">Let's Talk</a>
+ <!-- Home Section -->
+    <section id="home">
+        <div class="home-overlay"></div>
+        <div class="home-container">
+            <div class="home-left animate-slide-up">
+                <div class="home-content">
+                    <span class="greeting">Hi, I'm</span>
+                    <h1 class="name">Lucky <span class="name-highlight">Junghare</span></h1>
+                    <h4 class="title">Frontend Web Developer</h4>
+                    <p class="description">Passionate about creating beautiful and functional web experiences.</p>
+                    <div class="home-buttons">
+                        <a href="#" class="btn btn-primary" target="_blank">
+                            <i class="fa-solid fa-download"></i> Resume
+                        </a>
+                        <a href="https://www.linkedin.com/in/lucky-junghare-869982232" class="btn btn-outline" target="_blank">
+                            <i class="fa-solid fa-message"></i> Let's Talk
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/luckyjunghare881" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lucky-junghare-869982232" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/im_lucky_881/" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://x.com/JunghareGlowup" target="_blank" class="social-icon">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="home-right flex s-center items-center">
-            <div class="circle flex s-center items-center" id="mainImage">
-                <!-- Here in src replace the given link with your image link -->
-                <img src="Screenshot 2025-09-08 145342.png" alt="">
-            </div>
-
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h1 class="t-center my-2 t-white f-2">About Me</h1>
-        <div class="about-container flex s-around ">
-            <div class=" about-left flex s-center items-center">
-                <!-- Here in src replade the given link with your secondary image link -->
-                <img src="Screenshot 2025-09-08 131157.png" alt="" style="width: 50%;">
-            </div>
-
-            <div class="about-right flex">
-                <div class="about-content">
-                    <h1 class="t-white m-b-1 poppins">lucky junghare</h1>
-                    <p class="t-white poppins">A self-tought Frontend Web Developer B.tech student looking for
-                        an opportunity in Web Development. <br>
-                        Who is committed to study web development. Mindset to fullfill the life with
-                        wonderful memories and knowledge.</p>
-                    <a class="btn live poppins" id="hireme"
-                        href="https://www.linkedin.com/in/lucky-junghare-869982232"">Hire Me</a>
+            <div class="home-right animate-fade-in">
+                <div class="profile-circle-wrapper">
+                    <div class="profile-circle-border"></div>
+                    <div class="profile-circle-inner">
+                        <img src="Screenshot 2025-09-08 145342.png" alt="Lucky Junghare Profile" class="profile-image">
+                    </div>
+                    <div class="profile-glow"></div>
+                    <div class="profile-dots"></div>
                 </div>
             </div>
         </div>
     </section>
 
 
+                     
+<!-- About Section -->
+    <section id="about">
+        <div class="section-header animate-slide-up">
+            <h2 class="section-title">About Me</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="about-container">
+            <div class="about-left animate-slide-up">
+                <div class="about-image-container">
+                    <img src="Screenshot 2025-09-08 131157.png" alt="Lucky Junghare Profile" class="about-image">
+                    <div class="about-image-decoration"></div>
+                </div>
+            </div>
+            <div class="about-right animate-slide-up">
+                <div class="about-content">
+                    <h3 class="about-name">Lucky Junghare</h3>
+                    <span class="about-role">Frontend Web Developer</span>
+                    <p class="about-description">
+                        A self-taught Frontend Web Developer and B.Tech student looking for 
+                        an opportunity in Web Development. I am committed to studying web development 
+                        with a mindset to fulfill life with wonderful memories and knowledge.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">0 - 1</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Completed</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Technologies</span>
+                        </div>
+                    </div>
+                    <a href="https://www.linkedin.com/in/lucky-junghare-869982232" class="btn btn-primary" target="_blank">
+                        <i class="fa-solid fa-briefcase"></i> Hire Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <div class="section-header animate-slide-up">
+            <h2 class="section-title">Certificates</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="certificates-container">
+            <div class="certificate-card animate-slide-up">
+                <img src="My Certificates/Screenshot 2025-12-07 001921.png" alt="AWS Certificate" class="certificate-image">
+                <h3 class="certificate-title">AWS Cloud Practitioner</h3>
+                <p class="certificate-issuer">Amazon Web Services</p>
+                <span class="certificate-date">2025</span>
+            </div>
+            <div class="certificate-card animate-slide-up">
+                <img src="My Certificates/Screenshot 2025-12-19 224713.png" alt="Salesforce Certificate" class="certificate-image">
+                <h3 class="certificate-title">Salesforce CRM</h3>
+                <p class="certificate-issuer">Salesforce</p>
+                <span class="certificate-date">2025</span>
+            </div>
+            <div class="certificate-card animate-slide-up">
+                <img src="My Certificates/Screenshot 2025-08-17 140926.png" alt="Oracle Certificate" class="certificate-image">
+                <h3 class="certificate-title">Oracle Cloud</h3>
+                <p class="certificate-issuer">Oracle</p>
+                <span class="certificate-date">2025</span>
+            </div>
+            <div class="certificate-card animate-slide-up">
+                <img src="My Certificates/Screenshot 2025-11-11 163258.png" alt="Cisco AICTE" class="certificate-image">
+                <h3 class="certificate-title">Cisco AICTE Virtual Internship Program 2025 in Networking</h3>
+                <p class="certificate-issuer">Cisco Networking Academy</p>
+                <span class="certificate-date">June – August 2025</span>
+            </div>
+        </div>
+    </section>
 
     <!-- Skills Section -->
     <section id="skills">
-        <h1 class="t-center my-2 t-white f-2">Skills</h1>
-        <div class="services-container flex s-around h-50"">
-        <div class=" skills-left flex s-center items-center">
-            <img src="skills.png" alt="">
+        <div class="section-header animate-slide-up">
+            <h2 class="section-title">Skills</h2>
+            <div class="title-underline"></div>
         </div>
-
-        <div class="skills-right flex items-center">
-            <div class="skillss-container">
-                <div class="html bar p-relative"><span class="bar-content left t-white">HTML</span><span
-                        class="bar-content right-skills t-white">90%</span></div>
-                <div class="css bar p-relative"><span class="bar-content left t-white">CSS</span><span
-                        class="bar-content right-skills t-white">80%</span></div>
-                <div class="js bar p-relative"><span class="bar-content left t-white">JavaScript</span><span
-                        class="bar-content right-skills t-white">75%</span></div>
-                <div class="bootstrap bar p-relative"><span class="bar-content left t-white">Bootstrap</span><span
-                        class="bar-content right-skills t-white">50%</span></div>
-                <div class="reactjs bar p-relative"><span class="bar-content left t-white">ReactJs</span><span
-                        class="bar-content right-skills t-white">30%</span></div>
+        <div class="skills-container">
+            <div class="skills-left animate-slide-up">
+                <img src="skills.png" alt="Skills Illustration" class="skills-image">
             </div>
-        </div>
+            <div class="skills-right animate-slide-up">
+                <div class="skills-bars">
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress html-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">CSS</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress css-progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress js-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">Bootstrap</span>
+                            <span class="skill-percent">50%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress bootstrap-progress" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-header">
+                            <span class="skill-name">ReactJS</span>
+                            <span class="skill-percent">30%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress react-progress" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
     <section id="services">
-        <h1 class=" t-center my-2 t-white f-2">Services</h1>
-        <div class="services-container flex s-center">
-            <div class="test-item flex f-col items-center">
-                <img src="./developer.png" alt="">
-                <h1 class="t-white poppins">Web Development</h1>
-                <p class="t-white poppins">Web Development is envolving everywhere. Every startup and every bussines
-                    have their own websites. As my passion I will help you to build your clean and fast website for your
-                    startup or your bussines.</p>
+        <div class="section-header animate-slide-up">
+            <h2 class="section-title">Services</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="services-container">
+            <div class="service-card animate-slide-up">
+                <img src="developer.png" alt="Web Development" class="service-image">
+                <h3 class="service-title">Web Development</h3>
+                <p class="service-description">
+                    Web Development is evolving everywhere. Every startup and every business 
+                    have their own websites. As my passion, I will help you build your clean 
+                    and fast website for your startup or business.
+                </p>
             </div>
-            <div class="test-item flex f-col items-center">
-                <img src="./social-media-management.png" alt="">
-                <h1 class="t-white poppins">Social Media Management</h1>
-                <p class="t-white poppins">Social Media is the power of future. So I'll help in developing brand
-                    awareness thow managing your social media handles and will to increase customer loyalty.</p>
+            <div class="service-card animate-slide-up">
+                <img src="social-media-management.png" alt="Social Media Management" class="service-image">
+                <h3 class="service-title">Social Media Management</h3>
+                <p class="service-description">
+                    Social Media is the power of the future. I'll help in developing brand 
+                    awareness through managing your social media handles and will work to 
+                    increase customer loyalty.
+                </p>
             </div>
-            <div class="test-item flex f-col items-center">
-                <img src="./startup.png" alt="">
-                <h1 class="t-white poppins">Growth Strategies</h1>
-                <p class="t-white poppins">As a web developer also I will help your brand to grow up . I will provide
-                    the growth strategies for your brand. And also help in searching techniques for your brand.</p>
+            <div class="service-card animate-slide-up">
+                <img src="startup.png" alt="Growth Strategies" class="service-image">
+                <h3 class="service-title">Growth Strategies</h3>
+                <p class="service-description">
+                    As a web developer, I will also help your brand grow up. I will provide 
+                    growth strategies for your brand and also help in searching techniques 
+                    for your brand.
+                </p>
             </div>
-
         </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects">
-        <h1 class=" t-center my-2 t-white f-2">Projects</h1>
-        <div class="projects-container flex s-center">
-            <div class="projects-item flex f-col s-center items-center">
-                <div class="image-container p-one">
-                    <img src="./weatherApp.png" alt="">
+        <div class="section-header animate-slide-up">
+            <h2 class="section-title">Projects</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="projects-container">
+            <div class="project-card animate-slide-up">
+                <div class="project-image">
+                    <img src="weatherApp.png" alt="Weather App" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/luckyjunghare881/weather_App.git" target="_blank" class="project-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://weather-lucky-1.vercel.app/" target="_blank" class="project-link">
+                                <i class="fa-solid fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <h1 class="t-white poppins">Weather App</h1>
-                <p class="t-white poppins"> A weather app using HTML, CSS and JavaScript. Fetch the weather from the
-                    openweather app using fetch api.</p>
-                <div class="buttons flex s-around">
-                    <a href="https://github.com/luckyjunghare881/weather_App.git"
-                        target="_blanks" class="btn mx-1 m-top">GitHub</a>
-                    <a href="https://weather-lucky-1.vercel.app/" target="_blanks" class="btn m-top live">Live
-                        Link</a>
-                    <a href="https://gamma.app/docs/Weathe-App-Project-vxoup98rw6crtgw?mode=doc" target="_blanks" class="btn mx-1 m-top ">project PPT
-                       </a>
-                </div>
-            </div>
-            <div class="projects-item flex f-col s-center items-center">
-                <div class="image-container p-three">
-                    <img src="./Intelligent Fashion CRM Automation.png" alt="">
-                </div>
-
-                <h1 class="t-white poppins">Intelligent Fashion CRM Automation</h1>
-                <p class="t-white poppins">The Intelligent Fashion CRM Automation project is the implementation of a customized Salesforce 
-Customer Relationship Management (CRM) solution for HandsMen Threads, a premium men's 
-fashion and tailoring brand.
+                <div class="project-content">
+                    <h3 class="project-title">Weather App</h3>
+                    <p class="project-description">
+                        A weather app using HTML, CSS and JavaScript. Fetch the weather from 
+                        the OpenWeather API using fetch API.
                     </p>
-                <div class="buttons flex s-around">
-                    <a href="https://github.com/luckyjunghare881/HandsMen_Threads_Project" target="_blanks"
-                        class="btn mx-1 m-top">GitHub</a>
-                    <a href="https://orgfarm-55b37fb5d3-dev-ed.develop.lightning.force.com/lightning/o/HandsMen_Customer__c/list?filterName=__Recent" target="_blank" class="btn m-top live">Live
-                        Link</a>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/luckyjunghare881/weather_App.git" target="_blank" class="btn btn-small">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="https://weather-lucky-1.vercel.app/" target="_blank" class="btn btn-small btn-primary">
+                            <i class="fa-solid fa-external-link-alt"></i> Live
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="projects-item flex f-col s-center items-center">
-                <div class="image-container p-three">
-                    <img src="./magicNotes.png" alt="">
-                </div>
 
-                <h1 class="t-white poppins">Magic Notes App</h1>
-                <p class="t-white poppins">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic obcaecati cum
-                    nemo
-                    recusandae voluptas ipsum.s</p>
-                <div class="buttons flex s-around">
-                    <a href="#" target="_blank"
-                        class="btn mx-1 m-top">GitHub</a>
-                    <a href="#" target="_blank" class="btn m-top live">Live
-                        Link</a>
+            <div class="project-card animate-slide-up">
+                <div class="project-image">
+                    <img src="Intelligent Fashion CRM Automation.png" alt="Fashion CRM" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/luckyjunghare881/HandsMen_Threads_Project" target="_blank" class="project-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fa-solid fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Intelligent Fashion CRM</h3>
+                    <p class="project-description">
+                        The Intelligent Fashion CRM Automation project is a customized Salesforce 
+                        CRM solution for HandsMen Threads, a premium men's fashion brand.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Salesforce</span>
+                        <span class="tag">CRM</span>
+                        <span class="tag">Automation</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="https://github.com/luckyjunghare881/HandsMen_Threads_Project" target="_blank" class="btn btn-small">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" class="btn btn-small btn-primary">
+                            <i class="fa-solid fa-external-link-alt"></i> Live
+                        </a>
+                    </div>
                 </div>
             </div>
-            
-           
-            
 
+            <div class="project-card animate-slide-up">
+                <div class="project-image">
+                    <img src="magicNotes.png" alt="Magic Notes App" class="project-img">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="#" target="_blank" class="project-link">
+                                <i class="fa-solid fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Magic Notes App</h3>
+                    <p class="project-description">
+                        A notes application for managing and organizing your daily notes 
+                        with a clean and intuitive interface.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                    <div class="project-buttons">
+                        <a href="#" target="_blank" class="btn btn-small">
+                            <i class="fa-brands fa-github"></i> GitHub
+                        </a>
+                        <a href="#" target="_blank" class="btn btn-small btn-primary">
+                            <i class="fa-solid fa-external-link-alt"></i> Live
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Contact Me Section -->
-    <section id="contact" class="m-b-1">
-        <h1 class=" t-center my-2 t-white f-2">Contact Me</h1>
-        <div class="contact-container flex s-around items-centers">
-            <div class="form" id="contactForm">
-                <form action="" id="contactFrom">
-                    <div class="name form-div">
-                        <input type="text" name="name" id="name" class="poppins" placeholder="Enter Your Name">
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-header animate-slide-up">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="title-underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info animate-slide-up">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
                     </div>
-                    <div class="email form-div">
-                        <input type="email" name="email" id="email" class="poppins" placeholder="Enter Your Email"
-                            required>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>luckyjunghare092@email.com</p>
                     </div>
-                    <div class="phone form-div">
-                        <input type="phone" name="phone" id="phone" class="poppins" placeholder="Enter Your Phone"
-                            required>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <div class="textarea form-div">
-                        <textarea name="text" id="textarea" cols="30" rows="10" class="poppins"
-                            placeholder="Enter Messages"></textarea>
+                    <div class="contact-details">
+                        <h4>Location</h4>
+                        <p>Madhya Pradesh, India</p>
                     </div>
-                    <button type="submit" class="btn poppins" id="submit">Send</button>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p>+91 8815948207</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form animate-slide-up">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="name" id="name" class="form-input" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" id="email" class="form-input" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="phone" id="phone" class="form-input" placeholder="Your Phone">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" class="form-input form-textarea" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fa-solid fa-paper-plane"></i> Send Message
+                    </button>
                 </form>
             </div>
         </div>
     </section>
-    <script async="async" data-cfasync="false" src="//pl23252952.highcpmgate.com/734747bf075abbb7a7c594c37379f105/invoke.js"></script>
-    <div id="container-734747bf075abbb7a7c594c37379f105"></div>
-        
+
     <!-- Footer Section -->
     <footer id="footer">
-        <ul class="flex s-center w-80 m-auto my-2 res">
-            <li><a href="home.html" class="poppinss">Home</a></li>
-            <li><a href="about.html" class="poppinss">About</a></li>
-            <li><a href="certificate.html" class="poppinss">certificate</a></li>
-            <li><a href="skills.html" class="poppinss">Skills</a></li>
-            <li><a href="projects.html" class="poppinss">Projects</a></li>
-            <li><a href="portfolio" class="poppinss">Portfolio</a></li>
-        </ul>
-        <ul class="flex s-center w-80 font-awesome ">
-            <a href="https://www.linkedin.com/in/lucky-junghare-869982232" target="_blank">
-                <li><i class="fa-brands fa-linkedin-in"></i></li>
-            </a>
-            <a href="https://github.com/luckyjunghare881" target="_blank">
-                <li><i class="fa-brands fa-github"></i></li>
-            </a>
-            <a href="https://www.instagram.com/im__lucky_881/" target="_blank">
-                <li><i class="fa-brands fa-instagram"></i></li>
-            </a>
-            <a href="https://www.youtube.com/@Dream_Crafters05" target="_blank">
-                <li><i class="fa-brands fa-youtube"></i></li>
-            </a>
-
-             <a href="https://www.facebook.com/lucky.junghare.2025/" target="_blank">
-                <li><i class="fa-brands fa-facebook"></i></li>
-            </a>
-
-             <a href="https://x.com/Junghare_Glowup" target="_blank">
-                <li><i class="fa-brands fa-twitter"></i></li>
-            </a>
-        </ul>
-        <p class="t-center my-2 poppins">&copy; All Rights Reserved - <span class="cpy-white poppins">lucky 
-   junghare </span></p>
-
+        <div class="footer-container">
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="certificate.html">Certificates</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/lucky-junghare-869982232" target="_blank" class="footer-social-icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/luckyjunghare881" target="_blank" class="footer-social-icon">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.instagram.com/im__lucky_881/" target="_blank" class="footer-social-icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@Dream_Crafters05" target="_blank" class="footer-social-icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a href="https://www.facebook.com/lucky.junghare.2025/" target="_blank" class="footer-social-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://x.com/Junghare_Glowup" target="_blank" class="footer-social-icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+            <p class="footer-copyright">
+                &copy; 2026 All Rights Reserved  - <span class="footer-name">Lucky Junghare</span>
+            </p>
+        </div>
     </footer>
 
-    <div id="scroll-top" onclick="scrolltop()">
-        <span><i class="fa-solid fa-arrow-up"></i></span>
+    <!-- Scroll to Top Button -->
+    <div id="scroll-top">
+        <i class="fa-solid fa-arrow-up"></i>
     </div>
 
+    <!-- JavaScript -->
+    <script src="script.js"></script>
 </body>
-<script src="/script.js"></script>
-
 </html>

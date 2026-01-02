@@ -1,155 +1,715 @@
 /* ===============================
+   RESPONSIVE CSS
+   Mobile-First Approach
+================================ */
+
+/* ===============================
    MOBILE DEVICES (phones)
    max-width: 600px
 ================================ */
 @media (max-width: 600px) {
-
-    /* Navbar hidden, bottom nav visible */
-    #navbar {
+    /* Hide desktop navbar, show bottom nav */
+    .nav-links {
         display: none;
     }
-
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .mobile-nav {
+        display: block;
+    }
+    
     #bottom {
         display: flex;
     }
-
-    /* Layout stacks */
-    #home,
-    .about-container,
-    .services-container,
-    .projects-container {
-        flex-direction: column;
-        align-items: center;
+    
+    /* Sections padding */
+    section {
+        padding: 4rem 1rem;
+        padding-bottom: 6rem;
     }
-
-    .home-left,
-    .home-right,
-    .about-left,
-    .about-right,
-    .skills-left,
-    .skills-right {
-        width: 100%;
-        padding: 1rem;
-        text-align: center;
+    
+    .section-title {
+        font-size: 1.75rem;
     }
-
-    /* Profile image */
-    .circle {
-        width: 13rem;
-        height: 13rem;
-    }
-
-    /* Services & Projects cards */
-    .test-item,
-    .projects-item {
-        width: 100%;
-        margin: 1rem 0;
-    }
-
-    .test-item img {
-        width: 60%;
-    }
-
-    /* Skills */
-    .skills-left img {
-        width: 90%;
-    }
-
-    /* Form */
-    .form {
-        width: 100%;
-        padding: 0 1rem;
-    }
-
-    /* Footer */
-    #footer ul {
-        flex-direction: column;
-    }
-
-    #footer ul li {
-        margin: .5rem 0;
-    }
-}
-
-
-/* ===============================
-   TABLETS (iPads, small laptops)
-   601px – 992px
-================================ */
-@media (min-width: 601px) and (max-width: 992px) {
-
-    /* Navbar visible */
-    #navbar {
-        display: block;
-    }
-
-    #bottom {
-        display: none;
-    }
-
-    /* Home */
+    
+    /* Home Section */
     #home {
-        flex-direction: column;
+        margin-top: 60px;
+        min-height: calc(100vh - 60px);
+        padding: 2rem 1rem;
+        display: flex;
         align-items: center;
+        justify-content: center;
+    }
+    
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;      /* FIX */
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        gap: 1rem;
     }
 
     .home-left,
     .home-right {
-        width: 90%;
+        width: 100%;              /* FIX */
+        display: flex;            /* FIX */
+        justify-content: center;  /* FIX */
+        align-items: center;      /* FIX */
+        margin: 0;                /* FIX */
+    }
+
+
+    .home-left {
+        order: 0;  
+        margin-bottom: 1.5rem;
+    }
+    
+    .home-content {
+        max-width: 100%;
+    }
+    
+    .name {
+        font-size: 2.25rem;
+    }
+    
+    .title {
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .home-buttons {
+
+        flex-direction: column;
+        gap: 0.75rem;
+        align-items: center;
+    }
+
+    
+    .home-buttons .btn {
+        background: local;
+        width: 100%;
+        max-width: 280px;
+    }
+    
+    /* Resume Button Border - Mobile */
+    .home-buttons .btn-primary {
+        border: 2px solid var(--accent);
+    }
+    
+    /* Home Right Profile Circle */
+    .home-right {
+       order: 1;
+        margin-bottom: 1.5rem;
+    }
+    
+    .profile-circle-wrapper {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .profile-circle-inner {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .profile-glow {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .profile-dots {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .description {
+        text-align: center;
+    }
+
+    /* About Section */
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+    
+    .about-image-container {
+        width: 200px;
+        height: 250px;
+    }
+    
+    .about-image-placeholder {
+        font-size: 4rem;
+    }
+    
+    .about-content {
+        max-width: 100%;
+    }
+    
+    .about-stats {
+        justify-content: center;
+    }
+    
+    .stat-number {
+        font-size: 1.5rem;
+    }
+    
+    /* Certificates */
+    .certificates-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Skills Section */
+    .skills-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .skills-image-placeholder {
+        width: 200px;
+        height: 200px;
+        font-size: 5rem;
+    }
+    
+    /* Services */
+    .services-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    /* Projects */
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Contact */
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-info {
+        order: 2;
+    }
+    
+    .contact-form {
+        order: 1;
+        padding: 1.5rem;
+    }
+    
+    .contact-item {
+        justify-content: center;
+        text-align: left;
+    }
+    
+    /* Footer */
+    #footer {
+        padding-bottom: 6rem;
+    }
+    
+    .footer-links ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .footer-social {
+        flex-wrap: wrap;
+    }
+    
+    /* Scroll to Top - adjust for bottom nav */
+    #scroll-top {
+        bottom: 6rem;
+        right: 1rem;
+    }
+}
+
+/* ===============================
+   SMALL TABLETS
+   601px – 768px
+================================ */
+@media (min-width: 601px) and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .mobile-nav {
+        display: block;
+    }
+    
+    #bottom {
+        display: none;
+    }
+    
+    section {
+        padding: 4rem 1.5rem;
+    }
+    
+    /* Home */
+    #home {
+        margin-top: 70px;
+        min-height: calc(100vh - 70px);
+        padding: 2rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .home-container {
+       display: flex;
+        flex-direction: column;
+        align-items: center;      /* FIX */
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        gap: 1.5rem;   
+    }
+
+     .home-left,
+    .home-right {
+        width: 100%;              /* FIX */
+        display: flex;            /* FIX */
+        justify-content: center;  /* FIX */
+        align-items: center;      /* FIX */
+        margin: 0;                /* FIX */
+    }
+    
+    .home-left {
+        order: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .name {
+        font-size: 2.5rem;
+    }
+    
+    .home-buttons {
+        justify-content: center;
+    }
+    
+    /* Resume Button Border - Tablet */
+    /* Resume Button Border - Mobile */
+    .home-buttons .btn-primary {
+       text-decoration-thickness: var(--accent);
+        border: 2px solid var(--accent);
+    }
+    
+    /* Home Right Profile Circle - Tablet */
+    .home-right {
+        order: 1;
+        margin-bottom: 2rem;
+    }
+    
+    .profile-circle-wrapper {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .profile-circle-inner {
+        width: 250px;
+        height: 250px;
+    }
+    
+    .profile-glow {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .profile-dots {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+    
+    .description {
         text-align: center;
     }
 
     /* About */
     .about-container {
-        flex-direction: column-reverse;
-        align-items: center;
-    }
-
-    .about-left,
-    .about-right {
-        width: 90%;
+        flex-direction: column;
         text-align: center;
+        gap: 3rem;
     }
-
-    /* Skills */
-    .skills-left,
-    .skills-right {
-        width: 90%;
+    
+    .about-content {
+        max-width: 100%;
     }
-
-    /* Services & Projects */
-    .services-container,
-    .projects-container {
-        flex-wrap: wrap;
+    
+    .about-stats {
         justify-content: center;
     }
-
-    .test-item,
-    .projects-item {
-        width: 45%;
-        margin: 1rem;
+    
+    /* Skills */
+    .skills-container {
+        flex-direction: column;
+        gap: 3rem;
     }
-
-    /* Form */
-    .form {
-        width: 90%;
+    
+    /* Certificates & Services */
+    .certificates-container,
+    .services-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Projects */
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Contact */
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
     }
 }
 
-
 /* ===============================
-   DESKTOP / LAPTOP
-   min-width: 993px
+   TABLETS (iPads)
+   769px – 992px
 ================================ */
-@media (min-width: 993px) {
-
-    #navbar {
-        display: block;
+@media (min-width: 769px) and (max-width: 992px) {
+    .nav-links ul {
+        gap: 0.25rem;
     }
-
+    
+    .nav-link {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.9rem;
+    }
+    
     #bottom {
         display: none;
     }
+    
+    section {
+        padding: 5rem 2rem;
+    }
+    
+    /* Home */
+    #home {
+        margin-top: 70px;
+        min-height: calc(100vh - 70px);
+    }
+    
+    .home-container {
+        gap: 2rem;
+    }
+    
+    .name {
+        font-size: 2.75rem;
+    }
+    
+    /* Home Right Profile Circle - Tablet */
+    .profile-circle-wrapper {
+        width: 300px;
+        height: 300px;
+    }
+    
+    .profile-circle-inner {
+        width: 270px;
+        height: 270px;
+    }
+    
+    .profile-glow {
+        width: 320px;
+        height: 320px;
+    }
+    
+    .profile-dots {
+        width: 340px;
+        height: 340px;
+    }
 
-    /* Default desktop styles already applied in style.css */
+    /* About */
+    .about-container {
+        gap: 2rem;
+    }
+    
+    .about-image-container {
+        width: 250px;
+        height: 300px;
+    }
+    
+    /* Skills */
+    .skills-container {
+        gap: 2rem;
+    }
+    
+    .skills-image-placeholder {
+        width: 250px;
+        height: 250px;
+        font-size: 6rem;
+    }
+    
+    /* Certificates, Services, Projects */
+    .certificates-container,
+    .services-container,
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    /* Contact */
+    .contact-container {
+        gap: 2rem;
+    }
+}
+
+/* ===============================
+   SMALL DESKTOP
+   993px – 1200px
+================================ */
+@media (min-width: 993px) and (max-width: 1200px) {
+    #bottom {
+        display: none;
+    }
+    
+    .nav-container {
+        padding: 1rem 1.5rem;
+    }
+    
+    .nav-link {
+        padding: 0.5rem 0.75rem;
+    }
+    
+    #home {
+        margin-top: 70px;
+        min-height: calc(100vh - 70px);
+    }
+    
+    .home-container {
+        gap: 3rem;
+    }
+    
+    .name {
+        font-size: 3rem;
+    }
+    
+    /* About */
+    .about-container,
+    .skills-container {
+        gap: 3rem;
+    }
+    
+    /* Grid layouts */
+    .certificates-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .services-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ===============================
+   LARGE DESKTOP
+   min-width: 1201px
+================================ */
+@media (min-width: 1201px) {
+    #bottom {
+        display: none;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    .mobile-nav {
+        display: none !important;
+    }
+    
+    section {
+        padding: 6rem 2rem;
+    }
+    
+    .certificates-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .services-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .projects-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ===============================
+   HOVER EFFECTS (Desktop Only)
+================================ */
+@media (hover: hover) and (pointer: fine) {
+    .nav-link:hover {
+        background: rgba(77, 181, 255, 0.1);
+    }
+    
+    .certificate-card:hover .certificate-icon {
+        background: var(--accent);
+        color: var(--bg-primary);
+    }
+    
+    .service-card:hover .service-icon {
+        transform: scale(1.1);
+    }
+    
+    .project-card:hover .project-placeholder {
+        transform: scale(1.05);
+    }
+    
+    .form-input:hover {
+        border-color: rgba(77, 181, 255, 0.5);
+    }
+}
+
+/* ===============================
+   PRINT STYLES
+================================ */
+@media print {
+    #navbar,
+    #bottom,
+    #scroll-top,
+    .hamburger,
+    .mobile-nav {
+        display: none !important;
+    }
+    
+    body {
+        background: white;
+        color: black;
+    }
+    
+    section {
+        page-break-inside: avoid;
+    }
+}
+
+/* ===============================
+   REDUCED MOTION
+================================ */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* ===============================
+   DARK MODE SUPPORT
+================================ */
+@media (prefers-color-scheme: dark) {
+    /* Already dark theme - no changes needed */
+}
+
+/* ===============================
+   HIGH CONTRAST MODE
+================================ */
+@media (prefers-contrast: high) {
+    :root {
+        --accent: #00d4ff;
+        --text-secondary: rgba(255, 255, 255, 0.9);
+    }
+    
+    .btn,
+    .certificate-card,
+    .service-card,
+    .project-card,
+    .contact-form {
+        border-width: 3px;
+    }
+}
+
+/* ===============================
+   LANDSCAPE MOBILE
+================================ */
+@media (max-height: 500px) and (orientation: landscape) {
+    #home {
+        min-height: auto;
+        padding-top: 80px;
+        padding-bottom: 2rem;
+    }
+    
+    .home-container {
+        flex-direction: row;
+    }
+    
+    .home-left {
+        order: 1;
+    }
+    
+    .home-right {
+        order: 2;
+    }
+    
+    .profile-circle {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .name {
+        font-size: 1.75rem;
+    }
+    
+    .home-buttons {
+        flex-direction: row;
+    }
+    
+    .btn {
+        width: auto;
+    }
+}
+
+/* ===============================
+   ULTRA-WIDE SCREENS
+================================ */
+@media (min-width: 2000px) {
+    section {
+        max-width: 1600px;
+    }
+    
+    .nav-container {
+        max-width: 1600px;
+    }
+    
+    .section-title {
+        font-size: 3rem;
+    }
+    
+    .name {
+        font-size: 4rem;
+    }
+    
+    .profile-circle {
+        width: 400px;
+        height: 400px;
+    }
 }
